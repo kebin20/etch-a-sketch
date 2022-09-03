@@ -11,14 +11,16 @@
 
 <body>
     <h1>Try to draw something!</h1>
-
+    <div class="mode">Mode: Coloring </div>
     <div class="grid-container">
     </div>
 
     <div class="buttons">
-        <button class="black">Black</button>
-        <button class="white">White</button>
-        <button class="reset">Reset</button>
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('white')">Eraser</button>
+        <button onclick="changeColor('gray')">Gray</button>
+        <button onclick="changeColor('random')">Random</button>
+        <button onclick="resetBoard()">Reset</button>
     </div>
     <div>
         <input type="text" placeholder="Board Size" value="16" onchange="changeSize(this.value)">

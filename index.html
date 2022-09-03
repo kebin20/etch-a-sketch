@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TOP Project: Etch a Sketch</title>
+</head>
+
+<body>
+    <h1>Try to draw something!</h1>
+
+    <div class="grid-container">
+    </div>
+
+    <div class="buttons">
+        <button class="black">Black</button>
+        <button class="white">White</button>
+        <button class="reset">Reset</button>
+    </div>
+    <div>
+        <input type="text" placeholder="Board Size" value="16" onchange="changeSize(this.value)">
+    </div>
+    <button>Change Size</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

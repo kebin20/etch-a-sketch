@@ -6,27 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet"> 
     <title>TOP Project: Etch a Sketch</title>
 </head>
 
 <body>
     <h1>Try to draw something!</h1>
-    <div class="mode">Mode: Coloring </div>
+  <div class="big-container">
+    <div class="mode"></div>
     <div class="grid-container">
     </div>
 
     <div class="buttons">
-        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('black')" class="black-btn">Black</button>
         <button onclick="changeColor('white')">Eraser</button>
-        <button onclick="changeColor('gray')">Gray</button>
-        <button onclick="changeColor('random')">Random</button>
+        <button onclick="changeColor('gray')" class="gray-btn">Gray</button>
+        <button onclick="changeColor('random')" class="random-btn">Random</button>
         <button onclick="resetBoard()">Reset</button>
     </div>
     <div>
-        <input type="text" placeholder="Board Size" value="16" onchange="changeSize(this.value)">
+        <input type="number" value="16" onchange="changeSize(this.value)">
     </div>
-    <button>Change Size</button>
-
+    <button class="size-button">Change Size</button>
+</div>
     <script src="app.js"></script>
 </body>
 

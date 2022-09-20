@@ -1,5 +1,6 @@
 let color = "black";
 let click = true;
+const mode = document.querySelector(".mode")
 
 function populateBoard(size) {
   let grid = document.querySelector(".grid-container");
@@ -25,7 +26,7 @@ function populateBoard(size) {
 populateBoard(16);
 
 function changeSize(input) {
-  if (input >= 2 && input <= 100) {
+  if (input >= 2 && input <= 30) {
     populateBoard(input);
   } else {
     alert("Please enter valid size");
@@ -45,6 +46,7 @@ function colorSquare() {
 
 function changeColor(choice) {
   color = choice;
+  mode.textContent = `Mode: ${choice}`
 }
 
 function resetBoard() {
